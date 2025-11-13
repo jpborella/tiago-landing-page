@@ -2,6 +2,7 @@
   "name": "landing-tiago-bocato",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/tiago/",
   "type": "module",
   "scripts": {
     "dev": "vite",
