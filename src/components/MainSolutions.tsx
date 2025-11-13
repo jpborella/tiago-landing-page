@@ -53,9 +53,9 @@ function MainSolutionCard({ id, imagem, imagemResp, titulo, descricao, onOpen }:
             <div className="w-full flex items-center justify-center bg-white p-2">
                 <picture className="w-full flex items-center justify-center">
                     {imagemResp && (
-                        <source media="(max-width: 640px)" srcSet={`/images/${imagemResp}`} />
+                        <source media="(max-width: 640px)" srcSet={`${import.meta.env.BASE_URL}images/${imagemResp}`} />
                     )}
-                    <img src={`/images/${imagem}`} alt={titulo} className="w-full object-contain rounded" />
+                    <img src={`${import.meta.env.BASE_URL}images/${imagem}`} alt={titulo} className="w-full object-contain rounded" />
                 </picture>
             </div>
             <div className="p-4 flex-1 flex flex-col">

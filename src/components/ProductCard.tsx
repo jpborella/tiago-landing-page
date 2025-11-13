@@ -13,9 +13,9 @@ export default function ProductCard({ id, imagem, imagemResp, titulo, descricao,
             <div className="w-full md:h-30 lg:h-36 sm:h-40 flex items-center justify-center bg-white p-2">
                 <picture className="w-full h-full flex items-center justify-center">
                     {imagemResp && (
-                        <source media="(max-width: 640px)" srcSet={`/images/${imagemResp}`} />
+                        <source media="(max-width: 640px)" srcSet={`${import.meta.env.BASE_URL}images/${imagemResp}`} />
                     )}
-                    <img src={`/images/${imagem}`} alt={titulo} className="max-w-full max-h-full object-contain rounded" />
+                    <img src={`${import.meta.env.BASE_URL}images/${imagem}`} alt={titulo} className="max-w-full max-h-full object-contain rounded" />
                 </picture>
             </div>
             <div className="p-4 flex-1 flex flex-col">

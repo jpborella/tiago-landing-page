@@ -11,11 +11,11 @@ export default function Header() {
             <div className="bg-gradient-to-r from-[#123021] to-[#D64000]">
                 <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                     <div className="flex items-center sm:ml-10 ml-0">
-                        <img src="/images/logo1.png" alt="logo1" className="h-8 md:h-12 lg:h-14" />
-                        <img src="/images/logo2.png" alt="logo2" className="h-6 md:h-10 lg:h-12" />
+                        <img src={`${import.meta.env.BASE_URL}images/logo1.png`} alt="logo1" className="h-8 md:h-12 lg:h-14" />
+                        <img src={`${import.meta.env.BASE_URL}images/logo2.png`} alt="logo2" className="h-6 md:h-8 lg:h-10" />
                     </div>
 
-                    <div className="flex flex-col items-center -ml-18 sm:-ml-24 md:-ml- lg:-ml-60">
+                    <div className="absolute left-[52%] sm:left-1/2 top-1/2 translate-x-0 sm:-translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                         <span className="text-white text-[10px] sm:text-xs md:text-sm font-light">
                             Contato da revenda:
                         </span>
